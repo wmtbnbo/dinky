@@ -1,7 +1,6 @@
 package com.dlink.model;
 
 import com.baomidou.mybatisplus.annotation.*;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -40,15 +39,12 @@ public class JobInstance implements Serializable {
 
     private String error;
 
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
 
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private LocalDateTime updateTime;
 
-    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private LocalDateTime finishTime;
 
     private Long duration;
