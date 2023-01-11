@@ -17,28 +17,31 @@
  *
  */
 
+package org.dinky.alert.feige;
 
-export type AlertConfig = {
-  type: string,
+/**
+ * FeiGeConstants
+ * @author wangmu
+ * @since 2022/9/21 09:58
+ **/
+public class FeiGeConstants {
+
+    static final String TYPE = "FeiGe";
+
+    static final String CHARSET = "UTF-8";
+
+    static final String SPLIT = "\r\n";
+
+    static final String WEBHOOK = "webhook";
+
+    static final String CHATID = "chatid";
+
+    static final String APPKEY = "appkey";
+
+    static final String APISECRET = "apisecret";
+
+    static final String KEYWORD = "keyword";
+
+    static final String SHOW_TYPE = "msgtype";
+
 }
-
-export const ALERT_TYPE = {
-  DINGTALK:'DingTalk',
-  WECHAT:'WeChat',
-  FEISHU:'FeiShu',
-  EMAIL:'Email',
-  FEIGE:'FeiGe',
-};
-
-export const ALERT_CONFIG_LIST: AlertConfig[] = [{
-  type: ALERT_TYPE.DINGTALK,
-},{
-  type: ALERT_TYPE.WECHAT,
-},{
-  type: ALERT_TYPE.FEISHU,
-},{
-  type: ALERT_TYPE.EMAIL,
-},{
-  type: ALERT_TYPE.FEIGE,
-}
-];

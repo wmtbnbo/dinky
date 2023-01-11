@@ -33,6 +33,8 @@ export const getAlertIcon = (type: string) => {
       return (<Icon component={FeiShuSvg}/>);
     case ALERT_TYPE.EMAIL:
       return (<Icon component={EmailSvg}/>);
+    case ALERT_TYPE.FEIGE:
+      return (<Icon component={FeiGeSvg}/>);
     default:
       return (<Icon component={DefaultSvg}/>);
   }
@@ -92,6 +94,46 @@ export const EmailSvg = () => (
   </svg>
 );
 
+export const FeiGeSvg = () => (
+  <svg width="100" height="101" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path fill="rgb(124,93,12)" stroke="rgb(124,93,12)" stroke-width="1" opacity="0.5019607843137255" d="M 0 0 L 3 0.5 L 0 2.5 L 0 0 Z "></path>
+    <path fill="rgb(124,93,12)" stroke="rgb(124,93,12)" stroke-width="1" opacity="0.5019607843137255" d="M 97.5 0 Q 101.3 -1.3 100 2.5 L 97.5 0 Z "></path>
+    <path fill="rgb(124,93,12)" stroke="rgb(124,93,12)" stroke-width="1" opacity="0.5019607843137255" d="M 0.5 98 L 2.5 101 Q -1.9 102.1 0.5 98 Z "></path>
+    <path fill="rgb(124,93,12)" stroke="rgb(124,93,12)" stroke-width="1" opacity="0.5019607843137255" d="M 99.5 98 L 100 101 L 97 100.5 L 99.5 98 Z "></path>
+    <path fill="rgb(185,138,19)" stroke="rgb(185,138,19)" stroke-width="1" opacity="0.996078431372549" d="M 3.5 0 L 5 0.5 L 1 3.5 L 0.5 5 L 0 3.5 L 3.5 0 Z "></path>
+    <path fill="rgb(185,138,19)" stroke="rgb(185,138,19)" stroke-width="1" opacity="0.996078431372549" d="M 95.5 0 L 100 3.5 L 99.5 5 L 96.5 1 L 95.5 0 Z "></path>
+    <path fill="rgb(185,138,19)" stroke="rgb(185,138,19)" stroke-width="1" opacity="0.996078431372549" d="M 0.5 96 L 3.5 100 L 5 100.5 L 3.5 101 L 0 97.5 L 0.5 96 Z "></path>
+    <path fill="rgb(185,138,19)" stroke="rgb(185,138,19)" stroke-width="1" opacity="0.996078431372549" d="M 99.5 96 L 100 97.5 L 95.5 101 L 95.5 100 L 99 97.5 L 99.5 96 Z "></path>
+    <path fill="rgb(185,138,19)" stroke="rgb(185,138,19)" stroke-width="1" opacity="1" d="M 5.5 0 L 94.5 0 L 99 3.5 L 100 5.5 L 100 95.5 L 96.5 100 L 94.5 101 L 5.5 101 L 1 97.5 L 0 95.5 L 0 5.5 L 3.5 1 L 5.5 0 Z M 28 29 L 28 33 L 27 30 L 24 32 Q 23 40 26 44 Q 34 48 37 57 L 33 55 L 28 56 L 27 62 L 30 61 L 47 70 L 59 70 L 69 73 L 75 72 L 76 69 L 67 67 L 60 63 L 65 60 L 69 54 Q 67 48 72 49 L 73 48 L 74 36 L 74 34 L 73 32 Q 74 27 69 29 L 69 31 L 66 30 Q 67 36 63 39 L 47 53 L 41 45 L 41 41 Q 38 42 39 38 L 37 38 L 36 34 Q 33 35 34 33 Q 33 30 32 32 L 31 31 L 28 29 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 69.5 29 Q 74.3 27.3 73 31.5 L 74 33.5 L 73 33.5 L 71.5 30 Q 69.7 32.5 69.5 29 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 30.5 30 L 31.5 32 Q 32.8 29.8 34 32.5 L 32 32.5 L 31.5 34 Q 29 33 30.5 30 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 66 30 L 69 31.5 L 66 33 L 66 30 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 24.5 31 L 25 38.5 L 24 38.5 L 24.5 31 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 34.5 34 L 37 35.5 L 36.5 39 L 36 35 L 34.5 34 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 73.5 35 L 74 38.5 L 72.5 41 L 72 39.5 L 73.5 35 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 64.5 36 L 63.5 38 L 64.5 36 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 38.5 38 L 39 41.5 L 38 41.5 L 38.5 38 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 59.5 41 L 57.5 44 L 59.5 41 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 72.5 42 L 73 44 L 71 43.5 L 72.5 42 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 26.5 43 L 29.5 47 L 26.5 43 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 55.5 44 L 53.5 47 L 55.5 44 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 72.5 45 L 73 47.5 L 70.5 49 L 70.5 48 Q 73.4 48.7 72.5 45 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 49.5 50 L 46.5 54 L 49.5 50 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 35.5 53 L 38 56.5 L 37 56.5 L 35.5 53 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 30.5 55 L 33 55.5 L 30.5 56 L 30.5 55 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 28.5 56 L 30 58.5 L 29 58.5 L 28.5 56 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 66.5 57 L 64.5 60 L 61.5 62 L 63.5 59 L 66.5 57 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 27.5 58 L 29 61.5 L 27 62 L 27.5 58 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 31.5 61 L 32.5 63 L 31.5 61 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 36.5 64 L 37.5 66 L 36.5 64 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 62.5 64 L 63.5 66 L 62.5 64 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 46.5 69 L 57 69.5 L 46.5 70 L 46.5 69 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 75.5 69 L 76 70.5 L 74 71.5 L 75.5 69 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 59.5 70 L 62 70.5 L 59.5 71 L 59.5 70 Z "></path>
+    <path fill="rgb(212,183,111)" stroke="rgb(212,183,111)" stroke-width="1" opacity="1" d="M 68.5 72 L 73 72.5 L 68.5 73 L 68.5 72 Z "></path>
+    <path fill="rgb(253,251,248)" stroke="rgb(253,251,248)" stroke-width="1" opacity="1" d="M 28 29 Q 31.3 27.7 30 32.5 L 32 33.5 L 32.5 32 L 34 35 Q 37.3 33.7 36 38.5 L 38 38.5 L 38.5 42 Q 39.8 39.8 41 42.5 L 41 46 Q 43.7 44.9 43 47.5 L 46.5 54 L 52.5 47 L 63 40 L 66 33 L 69 31.5 L 69.5 30 L 72 30.5 L 73 38.5 L 72 40.5 L 73 41.5 L 71.5 44 L 73 44.5 L 72 48 L 69 49.5 Q 68.6 56.1 64.5 59 L 60 62.5 Q 59.3 64.8 61.5 64 L 67.5 68 L 75 69 L 73.5 72 L 66.5 72 L 56.5 69 L 45.5 69 L 31.5 61 L 28 61 Q 27 57.2 29.5 56 L 38 57 L 25 40.5 L 25 30.5 L 26 30.5 L 27.5 35 L 28 29 Z "></path>
+  </svg>
+);
 
 export const DefaultSvg = () => (
 <svg t="1648879472114" className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"

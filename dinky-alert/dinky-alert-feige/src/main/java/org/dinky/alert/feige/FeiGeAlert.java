@@ -17,28 +17,26 @@
  *
  */
 
+package org.dinky.alert.feige;
 
-export type AlertConfig = {
-  type: string,
+import org.dinky.alert.AbstractAlert;
+import org.dinky.alert.AlertResult;
+
+/**
+ * FeiGeAlert
+ * @author wangmu
+ * @since 2022/9/21 09:58
+ **/
+public class FeiGeAlert extends AbstractAlert {
+
+    @Override
+    public String getType() {
+        return FeiGeConstants.TYPE;
+    }
+
+    @Override
+    public AlertResult send(String title, String content) {
+        FeiGeSender sender = new FeiGeSender(getConfig().getParam());
+        return sender.send(title, content);
+    }
 }
-
-export const ALERT_TYPE = {
-  DINGTALK:'DingTalk',
-  WECHAT:'WeChat',
-  FEISHU:'FeiShu',
-  EMAIL:'Email',
-  FEIGE:'FeiGe',
-};
-
-export const ALERT_CONFIG_LIST: AlertConfig[] = [{
-  type: ALERT_TYPE.DINGTALK,
-},{
-  type: ALERT_TYPE.WECHAT,
-},{
-  type: ALERT_TYPE.FEISHU,
-},{
-  type: ALERT_TYPE.EMAIL,
-},{
-  type: ALERT_TYPE.FEIGE,
-}
-];

@@ -240,6 +240,14 @@
             </includes>
         </fileSet>
         <fileSet>
+            <directory>${project.parent.basedir}/dinky-alert/dinky-alert-feige/target
+            </directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>dinky-alert-feige-${project.version}.jar</include>
+            </includes>
+        </fileSet>
+        <fileSet>
             <directory>${project.parent.basedir}/dinky-doc/extends</directory>
             <outputDirectory>jar</outputDirectory>
             <includes>

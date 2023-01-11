@@ -31,6 +31,7 @@ import {createOrModifyAlertInstance, sendTest} from "@/pages/RegistrationCenter/
 import WeChatForm from "@/pages/RegistrationCenter/AlertManage/AlertInstance/components/WeChatForm";
 import FeiShuForm from "@/pages/RegistrationCenter/AlertManage/AlertInstance/components/FeiShuForm";
 import EmailForm from "@/pages/RegistrationCenter/AlertManage/AlertInstance/components/EmailForm";
+import FeiGeForm from "@/pages/RegistrationCenter/AlertManage/AlertInstance/components/FeiGeForm";
 import {l} from "@/utils/intl";
 
 export type UpdateFormProps = {
@@ -85,13 +86,13 @@ const AlertInstanceChooseForm: React.FC<UpdateFormProps> = (props) => {
     >{
       (!alertType && !values?.id) && (<List
         grid={{
-          gutter: 16,
+          gutter: 20,
           xs: 1,
           sm: 2,
-          md: 4,
-          lg: 4,
-          xl: 4,
-          xxl: 4,
+          md: 5,
+          lg: 5,
+          xl: 5,
+          xxl: 5,
         }}
         dataSource={ALERT_CONFIG_LIST}
         renderItem={(item: AlertConfig) => (
@@ -160,6 +161,22 @@ const AlertInstanceChooseForm: React.FC<UpdateFormProps> = (props) => {
             handleChooseModalVisible();
           }}
           modalVisible={values?.type == ALERT_TYPE.EMAIL || alertType == ALERT_TYPE.EMAIL}
+          values={values}
+          onSubmit={(value) => {
+            onSubmit(value);
+          }}
+          onTest={(value) => {
+            onTest(value);
+          }}
+        /> : undefined
+      }
+      {(values?.type == ALERT_TYPE.FEIGE || alertType == ALERT_TYPE.FEIGE) ?
+        <FeiGeForm
+          onCancel={() => {
+            setAlertType(undefined);
+            handleChooseModalVisible();
+          }}
+          modalVisible={values?.type == ALERT_TYPE.FEIGE || alertType == ALERT_TYPE.FEIGE}
           values={values}
           onSubmit={(value) => {
             onSubmit(value);

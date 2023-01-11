@@ -594,9 +594,13 @@ export default {
   'pages.rc.alert.instance.email': 'Email Config',
   'pages.rc.alert.instance.feishu': 'FeiShu Config',
   'pages.rc.alert.instance.wechat': 'WeChat Config',
+  'pages.rc.alert.instance.feige': 'FeiGe Config',
 
   'pages.rc.alert.instance.webhookPleaseHolder': 'please enter webhook url',
   'pages.rc.alert.instance.keywordPleaseHolder': 'please enter keyword',
+  'pages.rc.alert.instance.chatidPleaseHolder': 'please enter chatid',
+  'pages.rc.alert.instance.appkeyPleaseHolder': 'please enter appkey',
+  'pages.rc.alert.instance.apisecretPleaseHolder': 'please enter apisecret',
   'pages.rc.alert.instance.secretPleaseHolder': 'please enter secret',
   'pages.rc.alert.instance.proxyPleaseHolder': 'please enter proxy',
   'pages.rc.alert.instance.portPleaseHolder': 'please enter port',
@@ -622,6 +626,9 @@ export default {
 
   'pages.rc.alert.instance.webhook': 'WebHook Url',
   'pages.rc.alert.instance.keyword': 'KeyWord',
+  'pages.rc.alert.instance.chatid': 'chatid',
+  'pages.rc.alert.instance.appkey': 'appkey',
+  'pages.rc.alert.instance.apisecret': 'apisecret',
   'pages.rc.alert.instance.secret': 'Secret',
   'pages.rc.alert.instance.isEnableProxy': 'IsEnableProxy',
   'pages.rc.alert.instance.proxy': 'Proxy',
